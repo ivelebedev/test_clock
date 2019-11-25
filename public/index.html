@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+ 
+	<title>Clock test</title>
+<link href="main.css" rel="stylesheet"></head>
+ 
+<body>
+	<div class="container">
+		<header class="header row row--sb row--bottom">
+			<div class="title">Выберите город:</div>
+			<div class="menu row">
+				<div class="menu__item"><a href="#0" class="menu__link menu__link--active">Москва</a></div>
+				<div class="menu__item"><a href="#1" class="menu__link">Куала-Лумпур</a></div>
+				<div class="menu__item"><a href="#2" class="menu__link">Детройт</a></div>
+			</div>
+		</header>
+		<section class="content">
+			<div class="clock row row--sb">
+				<div class="clock__visual">
+					<canvas id="canvas"></canvas>
+				</div>
+				<div class="clock__info">
+					<div class="clock__city" id="city"></div>
+					<div class="clock__date" id="date"></div>
+					<div class="clock__day" id="day"></div>
+					<div class="clock__time">
+						<span id="time"></span>
+						<button class="clock__change" id="change">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330" id="ico">
+								<path d="M315 75H51.213l49.393-49.394c5.858-5.857 5.858-15.355 0-21.213s-15.355-5.858-21.213 0l-75 75c-5.858 5.857-5.858 15.355 0 21.213l75 75a14.95 14.95 0 0 0 21.213 0c5.858-5.857 5.858-15.355 0-21.213L51.213 105H315c8.284 0 15-6.716 15-15s-6.716-15-15-15zm-64.394 79.393c-5.857-5.857-15.355-5.857-21.213 0s-5.858 15.355 0 21.213L278.787 225H15c-8.284 0-15 6.716-15 15s6.716 15 15 15h263.787l-49.393 49.394c-5.858 5.857-5.858 15.355 0 21.213a14.95 14.95 0 0 0 21.212-.001l75-75c5.858-5.857 5.858-15.355 0-21.213l-75-75z"/>
+							</svg>
+						</button>
+					</div>
+					<div class="clock__time" id="sync">синхронизация...</div>
+				</div>
+			</div>
+		</section>
+	</div>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
