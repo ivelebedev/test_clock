@@ -1,3 +1,3 @@
 ## Clock test exercise
 
-Demo:
+Demo: https://ivelebedev.github.io/test_clock/
